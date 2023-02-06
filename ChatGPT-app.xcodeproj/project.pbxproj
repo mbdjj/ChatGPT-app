@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34C2ABEC29915C3900AD0554 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2ABEB29915C3900AD0554 /* ChatViewModel.swift */; };
+		34C2ABEE29915D6F00AD0554 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2ABED29915D6F00AD0554 /* ChatMessage.swift */; };
+		34C2ABF3299165A700AD0554 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2ABF2299165A700AD0554 /* ChatBubble.swift */; };
+		34C2ABF52991715600AD0554 /* LoadingBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C2ABF42991715600AD0554 /* LoadingBubble.swift */; };
 		34F8CC9A2991398E00EF3D90 /* ChatGPT_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8CC992991398E00EF3D90 /* ChatGPT_appApp.swift */; };
-		34F8CC9C2991398E00EF3D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8CC9B2991398E00EF3D90 /* ContentView.swift */; };
+		34F8CC9C2991398E00EF3D90 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8CC9B2991398E00EF3D90 /* ChatView.swift */; };
 		34F8CC9E2991398F00EF3D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8CC9D2991398F00EF3D90 /* Assets.xcassets */; };
 		34F8CCA12991398F00EF3D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8CCA02991398F00EF3D90 /* Preview Assets.xcassets */; };
 		34F8CCA8299139D700EF3D90 /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34C2ABEB29915C3900AD0554 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		34C2ABED29915D6F00AD0554 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		34C2ABF2299165A700AD0554 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		34C2ABF42991715600AD0554 /* LoadingBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBubble.swift; sourceTree = "<group>"; };
 		34F8CC962991398E00EF3D90 /* ChatGPT-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F8CC992991398E00EF3D90 /* ChatGPT_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_appApp.swift; sourceTree = "<group>"; };
-		34F8CC9B2991398E00EF3D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34F8CC9B2991398E00EF3D90 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		34F8CC9D2991398F00EF3D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34F8CCA02991398F00EF3D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
@@ -34,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34C2ABEF29915D7B00AD0554 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */,
+				34C2ABED29915D6F00AD0554 /* ChatMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34C2ABF029915D8300AD0554 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34C2ABEB29915C3900AD0554 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		34C2ABF129915D8E00AD0554 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34F8CC9B2991398E00EF3D90 /* ChatView.swift */,
+				34C2ABF2299165A700AD0554 /* ChatBubble.swift */,
+				34C2ABF42991715600AD0554 /* LoadingBubble.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		34F8CC8D2991398E00EF3D90 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				34F8CC992991398E00EF3D90 /* ChatGPT_appApp.swift */,
-				34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */,
-				34F8CC9B2991398E00EF3D90 /* ContentView.swift */,
+				34C2ABEF29915D7B00AD0554 /* Model */,
+				34C2ABF129915D8E00AD0554 /* View */,
+				34C2ABF029915D8300AD0554 /* ViewModel */,
 				34F8CC9D2991398F00EF3D90 /* Assets.xcassets */,
 				34F8CC9F2991398F00EF3D90 /* Preview Content */,
 			);
@@ -141,7 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F8CCA8299139D700EF3D90 /* ChatGPTAPI.swift in Sources */,
-				34F8CC9C2991398E00EF3D90 /* ContentView.swift in Sources */,
+				34C2ABF52991715600AD0554 /* LoadingBubble.swift in Sources */,
+				34C2ABF3299165A700AD0554 /* ChatBubble.swift in Sources */,
+				34F8CC9C2991398E00EF3D90 /* ChatView.swift in Sources */,
+				34C2ABEC29915C3900AD0554 /* ChatViewModel.swift in Sources */,
+				34C2ABEE29915D6F00AD0554 /* ChatMessage.swift in Sources */,
 				34F8CC9A2991398E00EF3D90 /* ChatGPT_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +314,7 @@
 				DEVELOPMENT_TEAM = CMJ553K76W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatGPT;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +344,7 @@
 				DEVELOPMENT_TEAM = CMJ553K76W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatGPT;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

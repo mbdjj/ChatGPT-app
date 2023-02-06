@@ -11,7 +11,7 @@ import SwiftUI
 struct ChatGPT_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatView()
         }
     }
 }
