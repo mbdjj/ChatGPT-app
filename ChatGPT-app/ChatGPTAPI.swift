@@ -93,9 +93,17 @@ class ChatGPTAPI {
         return AsyncThrowingStream<String, Error> { continuation in
             Task(priority: .userInitiated) {
                 do {
+                    var streamText = ""
                     for try await line in result.lines {
-                        continuation.yield(line)
+                        if line.hasPrefix("data: "),
+                           let data = line.dropFirst(6).data(using: .utf8),
+                           let response = try? self.jsonDecoder.decode(CompletionResponse.self, from: data),
+                           let text = response.choices.first?.text {
+                            streamText += text
+                            continuation.yield(text)
+                        }
                     }
+                    historyList.append(streamText)
                     continuation.finish()
                 } catch {
                     continuation.finish(throwing: error)
@@ -107,3 +115,11 @@ class ChatGPTAPI {
 }
 
 extension String: Error {}
+
+struct CompletionResponse: Decodable {
+    let choices: [Choice]
+}
+
+struct Choice: Decodable {
+    let text: String
+}
