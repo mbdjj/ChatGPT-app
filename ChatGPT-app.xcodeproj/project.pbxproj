@@ -11,6 +11,7 @@
 		34F8CC9C2991398E00EF3D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8CC9B2991398E00EF3D90 /* ContentView.swift */; };
 		34F8CC9E2991398F00EF3D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8CC9D2991398F00EF3D90 /* Assets.xcassets */; };
 		34F8CCA12991398F00EF3D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8CCA02991398F00EF3D90 /* Preview Assets.xcassets */; };
+		34F8CCA8299139D700EF3D90 /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		34F8CC9B2991398E00EF3D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34F8CC9D2991398F00EF3D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34F8CCA02991398F00EF3D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				34F8CC992991398E00EF3D90 /* ChatGPT_appApp.swift */,
+				34F8CCA7299139D700EF3D90 /* ChatGPTAPI.swift */,
 				34F8CC9B2991398E00EF3D90 /* ContentView.swift */,
 				34F8CC9D2991398F00EF3D90 /* Assets.xcassets */,
 				34F8CC9F2991398F00EF3D90 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F8CCA8299139D700EF3D90 /* ChatGPTAPI.swift in Sources */,
 				34F8CC9C2991398E00EF3D90 /* ContentView.swift in Sources */,
 				34F8CC9A2991398E00EF3D90 /* ChatGPT_appApp.swift in Sources */,
 			);

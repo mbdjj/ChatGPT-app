@@ -16,6 +16,20 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            Task {
+                let api = ChatGPTAPI(apiKey: "your API Key here")
+                
+                do {
+                    let stream = try await api.sendMessageStream(text: "What is Swift Language?")
+                    for try await line in stream {
+                        print(line)
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
 
