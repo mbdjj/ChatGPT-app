@@ -19,6 +19,13 @@ struct ChatView: View {
                         Spacer()
                         ForEach(viewModel.messages) { message in
                             ChatBubble(message)
+                                .contextMenu {
+                                    Button {
+                                        viewModel.copy(message)
+                                    } label: {
+                                        Label("Copy", systemImage: "doc.on.doc")
+                                    }
+                                }
                         }
                         
                         if viewModel.isWriting {

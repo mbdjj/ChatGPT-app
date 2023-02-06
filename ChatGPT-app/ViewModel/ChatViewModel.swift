@@ -72,4 +72,8 @@ class ChatViewModel: ObservableObject {
         self.count += 1
     }
     
+    func copy(_ message: ChatMessage) {
+        UIPasteboard.general.string = message.text
+    }
+    
 }
